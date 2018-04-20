@@ -9,7 +9,17 @@
 </head>
 <body>
   <div id="app1">
-    {{ message }}  
+    {{ message }}
+    <button @click="changeWord">me</button>
+    <button @click="changeWord2" ref="my_button">me</button>
+  </div>
+
+  <div id="app2">
+    {{ message }}
+  </div>
+
+  <div id="app3">
+    {{ message }}
   </div>
 
   <script src="./vue.js"></script>
