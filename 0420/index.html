@@ -1,27 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <title>Document</title>
-</head>
-<body>
-  <div id="app1">
-    {{ message }}
-    <button @click="changeWord">me</button>
-    <button @click="changeWord2" ref="my_button">me</button>
-  </div>
-
-  <div id="app2">
-    {{ message }}
-  </div>
-
-  <div id="app3">
-    <hello123></hello123>
-  </div>
-
-  <script src="./vue.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>webpack</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/dist/build.js"></script>
+  </body>
 </html>
