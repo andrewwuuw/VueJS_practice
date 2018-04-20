@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+    <button @click="changeWord">click</button>
+    <button @click="killself">kill</button>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        message: "hihi"
+      },
+      beforeCreate() {
+        console.log("before create")
+      },
+      created() {
+        console.log("created")
+      },
+      beforeMount() {
+        console.log("before mount")
+      },
+      mounted() {
+        console.log("mountd")
+      },
+      beforeUpdate() {
+        console.log('before update')
+      },
+      updated() {
+        console.log('update')
+      },
+      destroy() {
+        console.log('destroied')
+      },
+      methods:{
+        changeWord: function() {
+          this.message = "changed!"
+        },
+        killself: function() {
+          this.$destroy()
+        }
+      }
+    })
+  </script>
+</body>
+</html>
