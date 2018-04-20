@@ -19,4 +19,12 @@ var vm1 = new Vue({
   }
 })
 
-vm1.$mount('#app3')
+vm1.$mount('#app2')
+
+// --------------------------
+
+Vue.component('hello123', {
+  template: '<h1>hihi</h1>'
+});
+
+new Vue({ el: '#app3' })
