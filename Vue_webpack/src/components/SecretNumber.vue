@@ -1,24 +1,18 @@
 <template>
   <div>
     Lotery: {{ number }}
-    <button @click="changeNumber">add 100</button>
+    <button @click="changeNumber">click!</button>
   </div>
 </template>
 
 <script>
 export default {
   data(){
-    return {
-      number: 100
-    }
+    return { number: 0 }
   },
   methods: {
     changeNumber() {
-      this.number += 100
-    }
+      this.number = Math.floor(Math.random() * 50) }
   }
 }
 </script>
-
-<style lang="css">
-</style>

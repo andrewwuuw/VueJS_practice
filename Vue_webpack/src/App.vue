@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    {{ message }}
     <my-home></my-home>
   </div>
 </template>
 
 <script>
+import MyHome from './components/Home.vue'
+
 export default {
-  data() {
-    return {
-      message: "hihi"
-    }
+  components: {
+    'my-home' : MyHome
   }
 }
 </script>
